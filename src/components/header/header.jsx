@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './header.module.css';
+import Selimplogo from "../../assets/Selimp.png"
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,7 +50,7 @@ function Header() {
       <a href="#home">
         <img
           className={styles.logo}
-          src="https://drive.google.com/uc?id=14jtTZVYaSNAlFUTOGoGfwg83ilLzhPbX"
+          src= {Selimplogo}
           alt="Logo Selimp"
         />
       </a>
@@ -57,7 +58,7 @@ function Header() {
         {/* Botão de Hambúrguer (só aparece em telas pequenas) */}
         {isSmallScreen && (
           <div className={styles.menuToggle} onClick={toggleMenu}>
-            {menuActive ? '✖' : '☰'}
+            {menuActive ? '' : '☰'}
           </div>
         )}
         {/* Menu Responsivo */}
