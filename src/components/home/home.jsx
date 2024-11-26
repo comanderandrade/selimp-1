@@ -1,13 +1,18 @@
 import styles from './home.module.css';
-function Home() {
+import fundo from "../../assets/fundo.png";
+import person from "../../assets/person.png";
 
+function Home() {
   return (
-    <div>
-      <h1>Soluções inteligentes para condomínios!</h1>
-      <h2>Conheça nossos serviços!</h2>
-      <a href="" alt="babaca-png"></a>
+    <div className={styles.containerBanner}>
+      <img src={fundo} alt="Fundo" className={styles.backgroundImage} />
+      <div className={styles.textContent}>
+        <h1>Soluções inteligentes para condomínios!</h1>
+        <h2>Conheça nossos serviços!</h2>
+      </div>
+      <img src={person} alt="Pessoa" className={styles.personImage} />
     </div>
   );
-
 }
+
 export default Home;

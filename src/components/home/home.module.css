@@ -1,0 +1,48 @@
+
+.containerBanner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  z-index: 1;
+  color: white;
+}
+
+.textContent h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.textContent h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+
+.personImage {
+  position: absolute;
+  bottom: 0;
+  right: 10rem;
+  max-height: 86%;
+  object-fit: contain;
+  z-index: 1;
+}
