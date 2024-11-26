@@ -25,13 +25,13 @@ function Footer() {
           <p>São Gonçalo - RJ</p>
         </div>
         <div className={styles.socialIcons}>
-          <a href="#" aria-label="Instagram">
+          <a href="#http://instagram.com/selimprj" aria-label="Instagram">
             <img
               src="https://via.placeholder.com/24/FFFFFF?text=I"
               alt="Instagram"
             />
           </a>
-          <a href="#" aria-label="Facebook">
+          <a href="https://www.facebook.com/people/Selimp/61564228050595/" aria-label="Facebook">
             <img
               src="https://via.placeholder.com/24/FFFFFF?text=F"
               alt="Facebook"
