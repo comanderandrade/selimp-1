@@ -1,0 +1,38 @@
+.header {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  padding: 0, 20px;
+  height: 80px;
+  background-color: #0E246D;
+  /* margin-top: 2em; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+
+  img {
+    max-height: 60px;
+    height: auto;
+  }
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5em;
+  margin: 0;
+  padding-right: 60px;
+}
+
+.nav ul li {
+  cursor: pointer;
+}
+
+.nav ul li a {
+  color: black;
+  text-decoration: none;
+}
