@@ -1,0 +1,36 @@
+/* Estilização do componente Description */
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem; /* Espaçamento entre os itens */
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.item {
+  max-width: 400px; /* Define uma largura máxima para os blocos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Espaçamento entre os elementos do bloco */
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* Para ícones que podem ser imagens */
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #0e246d; /* Azul escuro */
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+  color: #333333; /* Cinza escuro */
+  line-height: 1.5; /* Melhor leitura */
+}
