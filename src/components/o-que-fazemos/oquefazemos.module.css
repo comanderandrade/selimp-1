@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Espaço entre os cartões */
+  padding: 20px;
+  background-color: #ffffff; /* Cor de fundo da seção */
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #e4e4e4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+.reverse {
+  flex-direction: row-reverse; /* Inverte a ordem de texto e imagem */
+  display: flex; /* Garante que flex-direction funcione */
+}
+
+.text {
+  flex: 1;
+  padding: 10px;
+}
+
+.text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.text p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.text ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
