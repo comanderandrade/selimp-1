@@ -1,6 +1,6 @@
 /* Estilos gerais do Footer */
 .footer {
-  background-color: #0E246D; /* Azul escuro */
+  background-color: #0E246D; 
   color: white;
   padding: 2rem 1rem;
   font-size: 1rem;
@@ -18,6 +18,7 @@
   justify-content: center;
   gap: 2rem;
   text-align: center;
+
 }
 
 .infoItem {
@@ -25,6 +26,8 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
 .icon {

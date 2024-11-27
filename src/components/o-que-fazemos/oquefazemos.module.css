@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px; /* Espaço entre os cartões */
+  margin: 5em;
   padding: 20px;
   background-color: #ffffff; /* Cor de fundo da seção */
 }
@@ -25,24 +26,26 @@
 .text {
   flex: 1;
   padding: 10px;
+  margin-left: 20px;
+  margin-right: 2em;
 }
 
 .text h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 16px;
+  
 }
 
-.text p {
+.text p, li {
   font-size: 16px;
   margin-bottom: 12px;
   line-height: 1.5;
+
+
 }
 
-.text ul {
-  list-style: disc;
-  margin-left: 20px;
-}
+
 
 .image {
   flex: 1;
