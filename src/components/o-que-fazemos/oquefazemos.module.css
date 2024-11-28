@@ -1,58 +1,81 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Espaço entre os cartões */
-  margin: 5em;
-  padding: 20px;
+  gap: 5em; /* Espaço entre os cartões */
+  margin: 0 7em;
+  padding: 2em;
   background-color: #ffffff; /* Cor de fundo da seção */
 }
 
 .card {
   display: flex;
   align-items: center;
-  gap: 20px;
-  background: #e4e4e4;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  padding: 20px;
+  position: relative; /* Necessário para o controle de camadas */
 }
 
-.reverse {
-  flex-direction: row-reverse; /* Inverte a ordem de texto e imagem */
-  display: flex; /* Garante que flex-direction funcione */
-}
-
+/* Estilo para o .text */
 .text {
   flex: 1;
-  padding: 10px;
-  margin-left: 20px;
-  margin-right: 2em;
+  padding: 4em 10em 4em 4em;
+  background: #e4e4e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: -6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1; /* Garante que fique atrás da imagem */
 }
 
-.text h2 {
+/* Estilo para o .text2 */
+.text2 {
+  flex: 1;
+  padding: 4em 4em 4em 10em;
+  background: #e4e4e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: -6em; /* Ajuste simétrico */
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1; /* Garante que fique atrás da imagem */
+}
+
+/* Estilo dos títulos */
+.text h2, .text2 h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 16px;
-  
 }
 
-.text p, li {
+/* Parágrafos e listas */
+.text p, .text li,
+.text2 p, .text2 li {
   font-size: 16px;
   margin-bottom: 12px;
   line-height: 1.5;
-
-
 }
 
+/* Alinhamento adicional para listas do .text2 */
+.text2 p, .text2 li {
+  margin-left: 0; /* Remove margens extras */
+}
 
-
+/* Estilo para a imagem */
 .image {
   flex: 1;
+  display: flex; /* Centraliza a imagem */
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* Garante que a imagem fique na frente do texto */
+  position: relative;
 }
 
 .image img {
-  width: 100%;
+  width: 100%; /* Garante que ocupe toda a div */
+  max-width: 500px; /* Limita o tamanho máximo */
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: cover; /* Ajusta proporções */
 }

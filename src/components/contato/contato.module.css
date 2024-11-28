@@ -1,0 +1,133 @@
+/* Estilo geral do container */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: #ffffff;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* Estilo para a seção com imagem e botão */
+.container .wpp {
+  text-align: center;
+}
+
+/* Estilo para a imagem do especialista */
+.wpp img {
+  max-width: 300px; /* Limita o tamanho máximo */
+  width: 100%; /* Faz a imagem ocupar toda a largura disponível, sem ultrapassar o limite */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 1rem;
+}
+
+.wpp h2 {
+  font-size: 24px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.6em;
+  font-weight: bold;
+}
+
+/* Estilo do formulário */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 500px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  gap: 1rem;
+  max-height: 600px;
+  overflow: auto;
+  position: relative; /* Necessário para posicionar o botão à direita */
+}
+
+/* Estilo das seções do formulário */
+.formGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo do label dentro da caixa de entrada */
+.formGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #888;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  transition: 0.3s ease all;
+  pointer-events: none; /* Impede que o label interfira na interação com o input */
+}
+
+/* Quando o campo for focado ou preenchido, o label sobe */
+.formGroup input:focus + label,
+.formGroup input:not(:placeholder-shown) + label,
+.formGroup textarea:focus + label,
+.formGroup textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #0E246D;
+}
+
+/* Estilo dos campos de entrada */
+.formGroup input, .formGroup textarea {
+  padding: 0.5rem;
+  font-size: 15px;
+  border: none; /* Remover a borda */
+  border-radius: 8px; /* Mantém o border-radius */
+  background-color: #f7f7f7;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Remover a borda ao focar */
+.formGroup input:focus, .formGroup textarea:focus {
+  outline: none; /* Remove o contorno ao focar no campo */
+}
+
+.formGroup input::placeholder, .formGroup textarea::placeholder {
+  visibility: hidden; /* Oculta o placeholder enquanto o label estiver presente */
+}
+
+/* Estilo do botão de envio */
+.submitBtn {
+  padding: 0.5rem 2rem;
+  background-color: #0E246D;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-end;
+  margin-top: .5rem;
+}
+
+.submitBtn:hover {
+  background-color: #041264;
+}
+
+/* Espaçador entre os elementos */
+.espacer {
+  background-color: #F2F2F2;
+  width: 0.4em;
+  height: 30em;
+  margin: 0 5em 0 5em;
+  border-radius: 10px;
+}
+
+.wpp h2 {
+  text-align: left;
+}
+
+.wpp a img {
+  max-width: 230px; /* Diminui o tamanho máximo da imagem */
+  width: 100%; /* Garante que a imagem ocupe toda a largura disponível, mas respeite o limite */
+  height: auto; /* Mantém a proporção da imagem */
+}

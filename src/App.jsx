@@ -4,7 +4,7 @@ import Home from './components/home/home'
 import Description from './components/description/description'
 import OQueFazemos from './components/o-que-fazemos/oquefazemos'
 import QuemSomos from './components/quem-somos/quemSomos'
-// import Contato from './components/contato/contato'
+import Contato from './components/contato/contato.jsx'
 
 import './App.css'
 
@@ -17,7 +17,9 @@ function App() {
         <Description />
         <OQueFazemos />
         <QuemSomos />
+        <Contato />
         <Footer />
+        
     </>
   )
 }

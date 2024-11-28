@@ -20,7 +20,8 @@
 }
 
 .textContent {
-  margin-left: 6em;
+  margin-top: 2em;
+  margin-left: 8em;
   position: absolute;
   display: flex;
   flex-direction: column;

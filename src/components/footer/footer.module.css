@@ -1,60 +1,60 @@
-/* Estilos gerais do Footer */
-.footer {
-  background-color: #0E246D; 
-  color: white;
-  padding: 2rem 1rem;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+/* Estilo Geral do Rodapé */
+.footerContainer {
+  background-color: #081233;
+  color: white; /* Cor branca para texto */
+  padding: 2rem 1rem; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho padrão do texto */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Itens empilhados verticalmente */
+  align-items: center; /* Centraliza no eixo horizontal */
+  justify-content: center; /* Centraliza no eixo vertical */
+  gap: 2rem; /* Espaçamento entre seções */
 }
 
 /* Seção de Informações */
-.info {
-  display: flex;
-  flex-wrap: wrap; /* Torna o layout responsivo */
-  justify-content: center;
-  gap: 2rem;
-  text-align: center;
-
+.footerInfo {
+  display: flex; /* Flexbox */
+  flex-wrap: wrap; /* Torna responsivo */
+  justify-content: center; /* Centraliza os itens */
+  gap: 2rem; /* Espaçamento entre itens */
+  text-align: center; /* Texto centralizado */
 }
 
-.infoItem {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  color: white;
-  text-decoration: none;
+.footerInfoItem {
+  display: flex; /* Alinha ícone e texto horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 0.5rem; /* Espaçamento entre ícone e texto */
+  font-size: 1rem; /* Tamanho do texto */
+  color: white; /* Garante texto branco */
+  text-decoration: none; /* Remove sublinhado */
 }
 
-.icon {
+.footerIcon {
   font-size: 1.5rem; /* Tamanho maior para ícones */
 }
 
-/* Redes sociais */
-.socialIcons {
-  display: flex;
-  gap: 1rem;
+/* Redes Sociais */
+.footerSocial {
+  display: flex; /* Flexbox para alinhamento horizontal */
+  gap: 1rem; /* Espaçamento entre ícones */
 }
 
-.socialIcons img {
-  width: 24px;
+.footerSocial img {
+  width: 24px; /* Tamanho do ícone */
   height: 24px;
-  transition: transform 0.3s;
+  transition: transform 0.3s; /* Animação suave no hover */
 }
 
-.socialIcons img:hover {
-  transform: scale(1.2);
+.footerSocial img:hover {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone */
 }
 
-/* Seção de Direitos Autorais */
-.copyright {
-  background-color: #04126491; /* Fundo preto */
-  color: #fff;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  text-align: center;
+/* Direitos Autorais */
+.footerCopyright {
+  background-color: #0e1a5e; /* Fundo azul escuro */
+  color: white; /* Texto branco */
+  padding: 0.5rem 1rem; /* Espaçamento interno */
+  font-size: 0.9rem; /* Tamanho menor do texto */
+  text-align: center; /* Centraliza o texto */
+  border-radius: 8px; /* Borda arredondada */
 }
