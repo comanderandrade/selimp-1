@@ -8,6 +8,8 @@
   background-color: #ffffff;
   gap: 2rem;
   text-align: center;
+  margin-left: 6.3em;
+  margin-bottom: 5em;
 }
 
 /* Estilo para a seção com imagem e botão */
@@ -36,7 +38,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  max-width: 500px;
+  max-width: 450px;
   padding: 1.5rem;
   border-radius: 8px;
   gap: 1rem;
@@ -56,7 +58,7 @@
 .formGroup label {
   font-size: 14px;
   font-weight: bold;
-  color: #888;
+  color: #888888;
   position: absolute;
   left: 10px;
   top: 15px;
@@ -81,7 +83,7 @@
   font-size: 15px;
   border: none; /* Remover a borda */
   border-radius: 8px; /* Mantém o border-radius */
-  background-color: #f7f7f7;
+  background-color: #e7e7e7;
   width: 100%;
   box-sizing: border-box;
 }
@@ -113,12 +115,12 @@
   background-color: #041264;
 }
 
-/* Espaçador entre os elementos */
+/* Espaçador entre os elementos */  
 .espacer {
   background-color: #F2F2F2;
-  width: 0.4em;
+  width: 0.3em;
   height: 30em;
-  margin: 0 5em 0 5em;
+  margin: 0 2em 0 3em;
   border-radius: 10px;
 }
 
