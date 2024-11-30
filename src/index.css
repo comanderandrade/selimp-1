@@ -1,0 +1,49 @@
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box; /* Garantir que padding e border não afetem a largura */
+  }
+  
+  body {
+    font-family: 'Nokora', sans-serif; /* Aplica a fonte Nokora como padrão */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor de texto */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura */
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Cor do link igual à do texto */
+  }
+  
+  /* Resetando os estilos dos parágrafos */
+  p {
+    margin: 0;
+  }
+  
+  /* Estilos de containers e flexbox para centralização */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  /* Outras regras personalizadas do seu projeto podem ser adicionadas aqui */
+  

@@ -2,7 +2,7 @@
 .footerContainer {
   background-color: #081233;
   color: white; /* Cor branca para texto */
-  padding: 2rem 1rem; /* Espaçamento interno */
+  padding: 5rem 1rem; /* Espaçamento interno */
   font-size: 1rem; /* Tamanho padrão do texto */
   display: flex; /* Flexbox */
   flex-direction: column; /* Itens empilhados verticalmente */
@@ -16,21 +16,30 @@
   display: flex; /* Flexbox */
   flex-wrap: wrap; /* Torna responsivo */
   justify-content: center; /* Centraliza os itens */
-  gap: 2rem; /* Espaçamento entre itens */
+  gap: 4rem; /* Espaçamento entre itens */
   text-align: center; /* Texto centralizado */
 }
 
+/* Centralização do item no eixo vertical */
 .footerInfoItem {
   display: flex; /* Alinha ícone e texto horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  gap: 0.5rem; /* Espaçamento entre ícone e texto */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 1rem; /* Espaçamento entre ícone e texto */
   font-size: 1rem; /* Tamanho do texto */
   color: white; /* Garante texto branco */
   text-decoration: none; /* Remove sublinhado */
+  height: 100%; /* Garantir que o item tenha altura para centralizar o conteúdo */
+
 }
 
-.footerIcon {
-  font-size: 1.5rem; /* Tamanho maior para ícones */
+/* Tamanho máximo para as imagens dentro do item */
+.footerInfoItem img {
+  max-width: 2em;
+}
+
+.footerInfoItem p {
+  margin: 0;
 }
 
 /* Redes Sociais */
@@ -51,10 +60,28 @@
 
 /* Direitos Autorais */
 .footerCopyright {
-  background-color: #0e1a5e; /* Fundo azul escuro */
+  width: 100%; /* Ocupa toda a largura */
+  background-color: #0A0F20; /* Fundo azul escuro */
   color: white; /* Texto branco */
-  padding: 0.5rem 1rem; /* Espaçamento interno */
-  font-size: 0.9rem; /* Tamanho menor do texto */
-  text-align: center; /* Centraliza o texto */
-  border-radius: 8px; /* Borda arredondada */
+  padding: 1rem 1rem; /* Ajuste no padding vertical para diminuir o espaço */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  border-radius: 0; /* Remove bordas arredondadas */
+  position: relative; /* Mantém dentro do fluxo normal */
+  bottom: 0; /* Posicionado na base do rodapé */
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  line-height: 1.5; /* Ajuste o line-height se necessário */
+}
+
+/* Ajuste de cores para links e textos no rodapé */
+.footerContainer p,
+.footerContainer a {
+  color: white;
+}
+
+.footerCopyright p {
+  color: white;
+  font-size: 12px;
+  margin: 0; /* Remover margens extras, se houver */
 }
