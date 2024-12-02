@@ -3,9 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 4rem; /* Espaçamento entre os itens */
-  padding: 2rem;
-  background-color: #ffffff;
+  gap: 8rem; /* Espaçamento entre os itens */
+  padding: 10em 0 10em;
   text-align: center;
 }
 

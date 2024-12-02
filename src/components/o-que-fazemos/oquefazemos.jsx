@@ -6,7 +6,6 @@ import img4 from "../../assets/img4.png";
 const OQueFazemos = () => {
   return (
     <div className={styles.container}>
-      {/* Primeira seção */}
       <div className={styles.card}>
         <div className={styles.text}>
           <h2>Limpeza e Conservação</h2>
@@ -27,12 +26,11 @@ const OQueFazemos = () => {
         </div>
       </div>
 
-      {/* Segunda seção */}
-      <div className={`${styles.card} ${styles.reverse}`}>
+      <div className={styles.card}>
         <div className={styles.image}>
           <img src={img4} alt="Portaria e Controle de Acesso" />
         </div>
-        <div className={styles.text}>
+        <div className={styles.text2}>
           <h2>Portaria e Controle de Acesso</h2>
           <p>
             A portaria é essencial para a segurança de prédios e empresas, controlando o acesso de moradores e visitantes.
